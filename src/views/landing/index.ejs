@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!-- ////////////////////// Comentarios ////////////// -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flowersitas</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../public/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+<!-- ///////////////////////////////////////// HEADER //////////////////////////////////////////// -->
+
+    <header class="header">
+        <div class="nomSitio">
+          <a href="">
+            <h1 class="logoSitio">FLOWERSITAS</h1>
+          </a>
+        </div>
+        <nav class="container">
+            <ul class="navLista">
+                <li class="navItem" id="inicio"><a href="../auth/login.ejs">Acceder</a></li>
+                <li class="navItem item_hover"><a href="../landing/about.ejs">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+<!-- /////////////////////////////////////////////// HERO ///////////////////////////////////////////  -->
+
+    <div class="heroContainer">
+        <img class="banItem" src="../../../public/img/Banner.png" alt="">
+    </div>
+
+<!-- ////////////////////////////////////////////// FAVORITOS ////////////////////////////////////////// -->
+
+    <section class="favoritos">
+        <h2 class="favoritosTittle">Mas Vendidos</h2>
+        <div class="favoritosList">
+            <div class="favoritosCard">
+                <img class="cardImagen" src="../../../public/img/img1.jpeg" alt="flores" />
+                <div class="cardContent">
+
+                    <h3 class="cardTittle">Ramos</h3>
+
+                    <div class="cardDetalle">
+                        <h4>Bouquets en mix de flores frescas de temporada, diseñados al estilo orgánico para llevar todo el encanto de nuestro jardín directo a tus floreros favoritos</h4>
+                    </div>
+
+                    <div class="cardFooter">
+                        <span class="cardPrice">$$$$$$$$$</span>
+                        <div class="cardRating">
+                            <img src="../../../public/img/estrella.png" alt="" class="cardIcon" />
+                            <span class="cardCalificacion">4.8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="favoritosCard">
+                <img class="cardImagen" src="../../../public/img/img2.webp" alt="flores" />
+                <div class="cardContent">
+                    <h3 class="cardTittle">Ramos</h3>
+                    <div class="cardDetalle">
+                        <h4>Bouquets en mix de flores frescas de temporada, diseñados al estilo orgánico para llevar todo el encanto de nuestro jardín directo a tus floreros favoritos</h4>
+                    </div>
+                    <div class="cardFooter">
+                        <span class="cardPrice">$$$$$$$$$</span>
+                        <div class="cardRating">
+                            <img src="../../../public/img/estrella.png" alt="" class="cardIcon" />
+                            <span class="cardCalificaciin">4.8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="favoritosCard">
+                <img class="cardImagen" src="../../../public/img/img3.jpg" alt="flores" />
+                <div class="cardContent">
+                    <h3 class="cardTittle">Ramos</h3>
+                    <div class="cardDetalle">
+                        <h4>Bouquets en mix de flores frescas de temporada, diseñados al estilo orgánico para llevar todo el encanto de nuestro jardín directo a tus floreros favoritos</h4>
+                    </div>
+                    <div class="cardFooter">
+                        <span class="cardPrice">$$$$$$$$$</span>
+                        <div class="cardRating">
+                            <img src="../../../public/img/estrella.png" alt="" class="cardIcon" />
+                            <span class="cardCalificaciin">4.8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="favoritosCard">
+                <img class="cardImagen" src="../../../public/img/img4.webp" alt="flores" />
+                <div class="cardContent">
+                    <h3 class="cardTittle">Ramos</h3>
+                    <div class="cardDetalle">
+                        <h4>Bouquets en mix de flores frescas de temporada, diseñados al estilo orgánico para llevar todo el encanto de nuestro jardín directo a tus floreros favoritos</h4>
+                    </div>
+                    <div class="cardFooter">
+                        <span class="cardPrice">$$$$$$$$$</span>
+                        <div class="cardRating">
+                            <img src="../../../public/img/estrella.png" alt="" class="cardIcon" />
+                            <span class="cardCalificacion">4.8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- /////////////////////////////////////// FORMULARIO ///////////////////////////////////////////// -->
+
+    <div class="formularioContainer">
+        <div class="formularioContent">
+            <div class="formularioImagen">
+                <img src="../../../public/img/Make your dream.png" alt="" class="imagen" />
+            </div>
+            <div class="formularioColum">
+                <div class="formularioDescription">
+                    <h2 class="formularioTittle">Enterate de las nuevas promociones! <br> Subscribete </h2>
+                    <!-- Formulario con cambios para que apunte al servlet SubscripcionServlet -->
+                    <form class="form" id="newForm" action="SubscripcionServlet" method="post">
+                      <!-- Añadí el atributo name al input para que el servlet pueda obtener el valor -->
+                      <label for="email" class="visualizarEmail">Escribe tu correo electrónico</label>
+                      <input class="emailInput" type="email" id="email" name="email" placeholder="Escribe tu Email">
+                      <button type="submit" class="botonEnviar">Suscribirme</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- /////////////////////////////////// SOBRE NOSOTROS /////////////////////////////////////////// -->
+
+    <div class="snContent">
+        <h3 class="snTittle" id="SobreNosotros">Sabías que...</h3>
+        <p class="snText">Sabías que existen más de 100 especies de rosas silvestres en todo el mundo? Estas variedades naturales de rosas son la base genética de las miles de variedades cultivadas que conocemos hoy en día.  Las rosas no solo son hermosas, sino también fascinantes en su diversidad y simbolismo. Estas flores han capturado la imaginación humana durante siglos, con más de 150 especies diferentes registradas en todo el mundo. Desde los antiguos jardines de Persia hasta los modernos campos de rosas en Europa y América, su variedad de colores y aromas ha inspirado poetas, artistas y amantes de la jardinería por igual. Además de su uso ornamental, las rosas también tienen aplicaciones medicinales y culinarias en diversas culturas, desde infusiones que calman hasta mermeladas exquisitas. Así, las rosas no solo embellecen nuestros jardines, sino que también enriquecen nuestra vida con su historia y significado profundo.</p>
+    </div>
+
+<!-- ///////////////////////////////////////////////// BOX /////////////////////////////////////////////  -->
+
+  <div class="box">
+    <div class="box__content">
+      <a href="#">
+        <img src="../../../public/img/Fowersitas leather.png" />
+        <div class="capa">
+          <h2>Flowersitas</h2>
+        </div>
+      </a>
+    </div>
+  
+    <div class="box__content">
+      <a href="#">
+        <img src="../../../public/img/Valla.png" />
+        <div class="capa">
+          <h2>Flowersitas</h2>
+        </div>
+      </a>
+    </div>
+  
+    <div class="box__content">
+      <a href="#">
+        <img src="../../../public/img/Cartel.png" />
+        <div class="capa">
+          <h2>Flowersitas</h2>
+        </div>
+      </a>
+    </div>
+  </div>
+
+<!-- ////////////////////////////////////////////// FOOTER //////////////////////////////////////////  -->
+
+    <footer class="footer">
+        <a class="linkF" href="#inicio">
+          <h2 class="footer-title">FLOWERSITAS</h2>
+        </a>
+        <address class="footer-address">
+          Calle Falsa 123, Bogotá, Colombia
+        </address>
+        <nav class="footer-links">
+          Políticas de Privacidad | Términos y Condiciones
+        </nav>
+
+<!-- /////////////////////////////////////// ICONOS REDES SOCIALES ///////////////////////////////////  -->
+
+        <div class="social-buttons">
+          <ul class="social-buttons-list">
+            <li>
+              <a class="facebook" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="bi bi-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a class="twitter-x" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="bi bi-twitter-x"></i>
+              </a>
+            </li>
+            <li>
+              <a class="instagram" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+  
+      <script src="./home.java"></script>
+    </body>
+  </html>
+  

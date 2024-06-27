@@ -1,0 +1,91 @@
+.body_login {
+    background-image: url(../../img/img4.webp);
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/* FORMULARIO DE LOGIN */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 170px); /* Ajustar altura según la altura del encabezado y pie de página */
+    padding: 2em; /* Agregado de relleno para asegurar que el formulario no toque los bordes en pantallas pequeñas */
+    margin-top: 2em; /* Margen superior añadido */
+}
+
+.login-form {
+    background: #1C6758;
+    padding: 2.5em; /* Ajuste del relleno para hacer el formulario un poco más grande */
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 550px; /* Ajuste del ancho máximo del formulario */
+}
+
+.login-title {
+    color: #FFF7F1;
+    font-size: 2.2em; /* Tamaño de fuente moderado entre el original y el ajustado */
+    margin-bottom: 1em;
+}
+
+.login-label {
+    display: block;
+    color: #FFF7F1;
+    margin-bottom: 0.8em; /* Ajuste del margen inferior */
+    text-align: left;
+    font-size: 1.3em; /* Tamaño de fuente moderado */
+    font-weight: 700;
+}
+
+.login-input {
+    width: 100%;
+    padding: 1em; /* Ajuste del relleno */
+    margin-bottom: 1.2em; /* Ajuste del margen inferior */
+    border: none;
+    border-radius: 5px;
+    font-size: 1em; /* Tamaño de fuente moderado */
+}
+
+.login-button {
+    background-color: #FFBE98;
+    color: #FFF7F1;
+    padding: 1em 2em; /* Aumento del relleno */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em; /* Tamaño de fuente moderado */
+    font-weight: 600;
+    margin-bottom: -1em; /* Ajuste del margen inferior */
+}
+
+.login-button:hover {
+    background-color: #afe9af;
+}
+
+/* Enlace para Registrarse */
+.register {
+    color: #FFF7F1;
+    text-decoration: none;
+    font-size: 1.1em; /* Tamaño de fuente moderado */
+    margin-top: 1.5em; /* Añadido de margen superior */
+}
+
+.register-link {
+    color: #FFF7F1; /* Color del texto del enlace */
+    text-decoration: none; /* Sin subrayado por defecto */
+    font-size: 1.1em; /* Tamaño de fuente */
+    font-weight: 600;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+    margin-left: 0.7em; /* Separación adicional hacia la izquierda */
+}
+
+.register-link:hover {
+    color: #FFBE98; /* Cambio de color del texto del enlace al pasar el ratón */
+}
+
+
+
+

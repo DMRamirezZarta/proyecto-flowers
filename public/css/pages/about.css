@@ -1,0 +1,27 @@
+a {
+    text-decoration: none;
+}
+
+.body_background {
+    background-image: url(../../img/Fowersitas\ leather.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+}
+
+.about {
+    color: rgba(255, 255, 255, 0.4); /* Color translúcido */
+    font-size: 2em; /* Tamaño de fuente llamativo */
+    font-weight: 600;
+    font-family: "Dancing Script", cursive;
+    padding: 2em; /* Espacio alrededor del texto */
+    text-align: center; /* Centrar el texto dentro del contenedor */
+}
+
+.about_tittle {
+    color: rgba(255, 255, 255, 0.4); /* Color translúcido */
+    font-size: 2em; /* Tamaño de fuente llamativo */
+    font-weight: 600;
+    font-family: 'Cursive', sans-serif;
+}

@@ -1,0 +1,118 @@
+/* Estilos generales */
+.body_home {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*
+.usuario i {
+    font-size: 1.5em;
+    color: white;
+}
+*/
+
+/* Estilos específicos para la sección de productos */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2em 1em 0; /* Ajusta el padding para tener más espacio cerca del footer */
+    flex: 1;
+}
+
+/* Ajuste del ancho de las tarjetas de producto */
+.productoCard {
+    width: calc(30% - 1em);
+    margin: 1em 0;
+    border: 2px solid #1e4129;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background-color: #FFF;
+}
+
+.productoCard:hover {
+    transform: translateY(-5px);
+}
+
+.cardImagen {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cardContent {
+    padding: 1em;
+}
+
+.cardTittle {
+    font-size: 1.2em;
+    margin: 0;
+    color: #333;
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 1px solid #1e4129;
+}
+
+.cardAction {
+    display: flex;
+    align-items: center;
+    color: #1F5632;
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 1.2em; /* Aumentar tamaño de letra del icono del carrito */
+}
+
+.cardAction i {
+    margin-right: 0.5em;
+    font-size: 1.5em; /* Aumentar tamaño del icono del carrito */
+}
+
+.cardAction:hover {
+    color: #FFBE98;
+}
+
+.cardRating {
+    display: flex;
+    align-items: center;
+}
+
+.cardRating .cardIcon {
+    width: 20px;
+    margin-right: 0.5em;
+}
+
+.cardPrice {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.cardDetalle {
+    margin-bottom: 1em;
+}
+
+.cardDetalle h4 {
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+/* Ajustar el margen superior del footer para crear espacio adicional */
+footer.footer {
+    margin-top: 2em; /* Asegura que el footer esté más pegado a las tarjetas */
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .productos .productoCard {
+        width: calc(50% - 1em);
+    }
+}

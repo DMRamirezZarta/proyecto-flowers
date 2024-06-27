@@ -1,0 +1,211 @@
+/*   ////////////////////////////////////// FOOTER ////////////////////////////////// */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3em;
+    padding: 4em 2em;
+    background-color: #FFBE98;
+    color: #e8e8e8;
+    font-weight: 400;
+    max-width: 100%;
+    height: 22em;
+}
+
+@media (max-width: 991px) {
+    .footer {
+        max-width: 100%;
+        padding: 40px 20px;
+    }
+}
+
+.linkF {
+    text-decoration: none;
+}
+
+.footer-title {
+    margin-top: 0;
+    color: #fff;
+    font: 600 40px Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .footer-title {
+        margin-top: 40px;
+    }
+}
+
+.footer-address {
+    margin-top: 1em;
+    text-align: center;
+    font: 16px/175% Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #1F5632;
+}
+
+@media (max-width: 991px) {
+    .footer-address {
+        margin-top: 40px;
+    }
+}
+
+.footer-links {
+    margin-top: 1em;
+    font: 15px/126% Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #1F5632;
+}
+
+@media (max-width: 991px) {
+    .footer-links {
+        margin-top: 40px;
+    }
+}
+
+.footer-logo {
+    width: 205px;
+    max-width: 100%;
+    margin-top: 1em;
+    aspect-ratio: 5;
+    object-fit: auto;
+    object-position: center;
+}
+
+  /* ////////////////////////////////////// REDES SOCIALES ////////////////////////////////// */
+
+.social-buttons {
+    margin: 2% 0 0 0;
+    width: 30%;
+    padding: 3%;
+    position: relative;
+    border-radius: 15px;
+}
+
+.social-buttons-list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.social-buttons-list li {
+    list-style: none;
+}
+
+.social-buttons-list li a {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    transition: .5s;
+}
+
+.social-buttons-list li a span {
+    position: absolute;
+    transition: transform .5s;
+}
+
+  /* Líneas superior e inferior de cada ícono. */
+.social-buttons-list li a span:nth-child(1),
+.social-buttons-list li a span:nth-child(3) {
+    width: 100%;
+    height: 2px;
+    background: white;
+}
+
+.social-buttons-list li a span:nth-child(1) {
+    top: 0;
+    left: 0;
+    transform-origin: right;
+}
+
+.social-buttons-list li a:hover span:nth-child(1) {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+}
+
+.social-buttons-list li a span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+}
+
+.social-buttons-list li a:hover span:nth-child(3) {
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+
+  /* Líneas laterales a cada ícono. */
+.social-buttons-list li a span:nth-child(2),
+.social-buttons-list li a span:nth-child(4) {
+    width: 2px;
+    height: 100%;
+    background: white;
+}
+
+.social-buttons-list li a span:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transform-origin: bottom;
+}
+
+.social-buttons-list li a:hover span:nth-child(2) {
+    transform: scale(1);
+    transform-origin: top;
+    transition: transform .5s;
+}
+
+.social-buttons-list li a span:nth-child(4) {
+    top: 0;
+    right: 0;
+    transform: scale(0);
+    transform-origin: top;
+}
+
+.social-buttons-list li a:hover span:nth-child(4) {
+    transform: scale(1);
+    transform-origin: bottom;
+    transition: transform .5s;
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+.facebook:hover span {
+    background: #3b5998;
+}
+
+.twitter-x:hover {
+    color: #000000;
+}
+
+.twitter-x:hover span {
+    background: #000000;
+}
+
+.instagram:hover {
+    color: #c32aa3;
+}
+
+.instagram:hover span {
+    background: #c32aa3;
+}
+
+.bi-facebook, .bi-twitter-x, .bi-instagram {
+    font-size: 0.95em;
+}
