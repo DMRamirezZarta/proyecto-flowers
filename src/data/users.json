@@ -1,0 +1,9 @@
+{
+    "users": [
+        { "username": "carlos garcia", "password": "carlos123", "email": "carlos@example.com" },
+        { "username": "laura martinez", "password": "laura456", "email": "laura@example.com" },
+        { "username": "juan lopez", "password": "juan789", "email": "juan@example.com" },
+        { "username": "andrea rodriguez", "password": "andrea123", "email": "andrea@example.com" },
+        { "username": "felipe gomez", "password": "felipe456", "email": "felipe@example.com" }
+    ]
+}

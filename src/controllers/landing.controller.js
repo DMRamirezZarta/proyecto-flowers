@@ -1,11 +1,13 @@
 const path = require('path');
 
 module.exports = {
-    landing: (req, res)=> {
+    landing: (req, res) => {
         res.render(path.resolve(__dirname, '../views/landing/index.ejs'));
     },
-    about: (req, res)=> {
+    about: (req, res) => {
         res.render(path.resolve(__dirname, '../views/landing/about.ejs'));
+    },
+    index: (req, res) => {
+        res.render(path.resolve(__dirname, '../views/landing/index.ejs'));
     }
-
-}
+};

@@ -7,30 +7,30 @@
     <title>Register</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../../../public/css/index.css">
+    <link rel="stylesheet" href="/public/css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<body class="body_register" >
+<body class="body_register">
 
-<!-- ////////////////////////////////////////// HEADER ///////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////// HEADER ///////////////////////////////////////////// -->
 
     <header class="header">
         <div class="nomSitio">
-            <a href="../landing/index.ejs">
+            <a href="/landing/index">
                 <h1 class="logoSitio">FLOWERSITAS</h1>
             </a>
         </div>
         <nav class="container">
             <ul class="navLista">
-                <li class="navItem" id="inicio"><a href="../auth/login.ejs">Acceder</a></li>
-                <li class="navItem"><a href="../landing/about.ejs">Sobre Nosotros</a></li>
+                <li class="navItem" id="inicio"><a href="/auth/login">Acceder</a></li>
+                <li class="navItem"><a href="/landing/about">Sobre Nosotros</a></li>
             </ul>
         </nav>
 
     </header>
 
-<!-- ///////////////////////////////////////// REGISTER FORM /////////////////////////////////////  -->
+    <!-- ///////////////////////////////////////// REGISTER FORM /////////////////////////////////////  -->
 
     <div class="register-container">
         <div class="register-form">
@@ -46,11 +46,11 @@
                 <input type="password" id="confirm-password" name="confirm-password" class="register-input" placeholder="Confirme su contraseña">
                 <button type="submit" class="register-button">Registrarse</button>
             </form>
-            <p class="register"> Ya tienes una cuenta! <a  class="register-link" href="./login.html">Inicia Sesión</a></p>
+            <p class="register"> Ya tienes una cuenta! <a class="register-link" href="/auth/login">Inicia Sesión</a></p>
         </div>
     </div>
 
-<!-- ////////////////////////////////////////////// FOOTER /////////////////////////////////////////  -->
+    <!-- ////////////////////////////////////////////// FOOTER /////////////////////////////////////////  -->
 
     <footer class="footer">
         <a class="linkF" href="#inicio">
@@ -62,7 +62,7 @@
         <nav class="footer-links">
             Políticas de Privacidad | Términos y Condiciones
         </nav>
-<!-- ////////////////////////////////////// ICONOS REDES SOCIALES //////////////////////////////////  -->
+        <!-- ////////////////////////////////////// ICONOS REDES SOCIALES //////////////////////////////////  -->
         <div class="social-buttons">
             <ul class="social-buttons-list">
                 <li>
@@ -95,9 +95,9 @@
             </ul>
         </div>
     </footer>
-    
+
     <script src="./home.java"></script>
 
 </body>
-        
+
 </html>

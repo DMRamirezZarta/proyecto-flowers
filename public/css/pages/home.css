@@ -1,4 +1,3 @@
-/* Estilos generales */
 .body_home {
     margin: 0;
     padding: 0;
@@ -7,23 +6,29 @@
     min-height: 100vh;
 }
 
+
 /*
 .usuario i {
     font-size: 1.5em;
     color: white;
 }
 */
+#cerrar {
+    color: #325c58;
+}
 
-/* Estilos específicos para la sección de productos */
 .productos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 2em 1em 0; /* Ajusta el padding para tener más espacio cerca del footer */
+    padding: 2em 1em 0;
+    /* Ajusta el padding para tener más espacio cerca del footer */
     flex: 1;
 }
 
+
 /* Ajuste del ancho de las tarjetas de producto */
+
 .productoCard {
     width: calc(30% - 1em);
     margin: 1em 0;
@@ -69,12 +74,14 @@
     color: #1F5632;
     font-weight: 900;
     cursor: pointer;
-    font-size: 1.2em; /* Aumentar tamaño de letra del icono del carrito */
+    font-size: 1.2em;
+    /* Aumentar tamaño de letra del icono del carrito */
 }
 
 .cardAction i {
     margin-right: 0.5em;
-    font-size: 1.5em; /* Aumentar tamaño del icono del carrito */
+    font-size: 1.5em;
+    /* Aumentar tamaño del icono del carrito */
 }
 
 .cardAction:hover {
@@ -105,12 +112,17 @@
     line-height: 1.4;
 }
 
+
 /* Ajustar el margen superior del footer para crear espacio adicional */
+
 footer.footer {
-    margin-top: 2em; /* Asegura que el footer esté más pegado a las tarjetas */
+    margin-top: 2em;
+    /* Asegura que el footer esté más pegado a las tarjetas */
 }
 
+
 /* Media Query para dispositivos móviles */
+
 @media (max-width: 768px) {
     .productos .productoCard {
         width: calc(50% - 1em);
