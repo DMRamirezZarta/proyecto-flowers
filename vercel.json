@@ -8,15 +8,17 @@
   ],
   "routes": [
     {
+      "src": "/public/(.*)",
+      "dest": "/public/$1"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/app.js"
+      "dest": "app.js"
     }
   ],
-  "static": {
-    "directory": "public"
-  },
   "env": {
     "NODE_ENV": "production"
   }
 }
+
   
